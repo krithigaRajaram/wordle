@@ -9,7 +9,7 @@ function App() {
 
   const [solution,setSolution]=useState(null);
   useEffect(()=>{
-  fetch("http://localhost:8000/solution")
+  fetch("https://solution-jr7b.onrender.com/solution")
   .then(res=>res.json())
   .then(data=> {
     const randomSolution= data[Math.floor(Math.random()*data.length)]

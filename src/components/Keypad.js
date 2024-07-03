@@ -3,7 +3,7 @@ import React, {useState, useEffect } from 'react'
 export default function Keypad({usedkeys}) {
     const [letters,setLetters]=useState(null)
     useEffect(()=>{
-        fetch('http://localhost:8000/letters')
+        fetch('https://json-letters.onrender.com/letters')
         .then(res=>res.json())
         .then(data=>{
             setLetters(data)
